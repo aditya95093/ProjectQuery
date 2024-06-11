@@ -1,0 +1,51 @@
+[
+    {
+        "name" : "Aditya Singh",
+        "email" : "adityasingh@gmail.com",
+        "age"  : "21",
+        "city" : "Jaipur"
+
+    },
+    {
+        "name" : "Avinash Singh",
+        "email" : "avinashsingh@gmail.com",
+        "age"  : "12",
+        "city" : "Jaipur"
+
+    },
+    {
+        "name" : "Deepak Kumar Singh",
+        "email" : "deepaksingh@gmail.com",
+        "age"  : "28",
+        "city" : "Jodhpur"
+
+    },
+    {
+        "name" : "Ravi Sankar Sulaniya",
+        "email" : "rav@gmail.com",
+        "age"  : "23",
+        "city" : "Delhi"
+
+    },
+    {
+        "name" : "Samir Kumar",
+        "email" : "kumarsamir@gmail.com",
+        "age"  : "14",
+        "city" : "Patana"
+
+    },
+    {
+        "name" : "Shalu Yadav",
+        "email" : "shalu@gmail.com",
+        "age"  : "25",
+        "city" : "Siwan"
+
+    },
+    {
+        "name" : "Sikha Sah",
+        "email" : "sahsikha@gmail.com",
+        "age"  : "16",
+        "city" : "Ajmer"
+
+    }
+]
