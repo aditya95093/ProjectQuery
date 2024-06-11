@@ -89,7 +89,7 @@
         .btn {
             display: inline-block;
             padding: 6px 12px;
-            margin: 0;
+            margin: 0 2px;
             font-size: 14px;
             font-weight: 400;
             line-height: 1.5;
@@ -100,16 +100,43 @@
             border: 1px solid transparent;
             border-radius: 0.25rem;
             transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-            color: #fff;
-            background-color: #007bff;
-            border-color: #007bff;
             text-decoration: none;
         }
 
-        .btn:hover {
+        .btn-view {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-view:hover {
             color: #fff;
             background-color: #0056b3;
             border-color: #004085;
+        }
+
+        .btn-edit {
+            color: #fff;
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-edit:hover {
+            color: #fff;
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+        .btn-delete {
+            color: #fff;
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .btn-delete:hover {
+            color: #fff;
+            background-color: #c82333;
+            border-color: #bd2130;
         }
     </style>
 </head>
@@ -133,7 +160,7 @@
                 <th>Email</th>
                 <th>Age</th>
                 <th>City</th>
-                <th>View</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody id="userTable">
@@ -144,7 +171,11 @@
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->age }}</td>
                     <td>{{ $user->city }}</td>
-                    <td><a href="{{ route('view.user', $user->id) }}" class="btn">View</a></td>
+                    <td>
+                        <a href="{{ route('view.user', $user->id) }}" class="btn btn-view">View</a>
+                        <a href="#" class="btn btn-edit">Edit</a>
+                        <a href="#" class="btn btn-delete">Delete</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
